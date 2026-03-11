@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 100% 97%;
+    --foreground: 270 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 270 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 40% 15%;
+
+    --primary: 280 65% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 170 60% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 45 30% 92%;
+    --muted-foreground: 270 15% 45%;
+
+    --accent: 35 95% 60%;
+    --accent-foreground: 270 40% 15%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 20% 88%;
+    --input: 270 20% 88%;
+    --ring: 280 65% 55%;
+
+    --radius: 1rem;
+
+    --baby-pink: 340 80% 70%;
+    --baby-blue: 200 80% 65%;
+    --baby-green: 150 60% 55%;
+    --baby-yellow: 45 95% 65%;
+    --baby-orange: 25 90% 60%;
+    --baby-purple: 280 65% 60%;
+    --baby-coral: 10 80% 65%;
+    --baby-teal: 175 55% 50%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(280 65% 55%), hsl(200 80% 65%));
+    --gradient-warm: linear-gradient(135deg, hsl(340 80% 70%), hsl(25 90% 60%));
+    --gradient-nature: linear-gradient(135deg, hsl(150 60% 55%), hsl(175 55% 50%));
+    --gradient-sunset: linear-gradient(135deg, hsl(35 95% 60%), hsl(10 80% 65%));
+    --gradient-sky: linear-gradient(135deg, hsl(200 80% 65%), hsl(170 60% 50%));
+
+    --sidebar-background: 280 30% 98%;
+    --sidebar-foreground: 270 40% 15%;
+    --sidebar-primary: 280 65% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 280 30% 94%;
+    --sidebar-accent-foreground: 270 40% 15%;
+    --sidebar-border: 270 20% 90%;
+    --sidebar-ring: 280 65% 55%;
+  }
+
+  .dark {
+    --background: 270 30% 8%;
+    --foreground: 45 30% 95%;
+
+    --card: 270 25% 12%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 270 25% 12%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 280 65% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 170 55% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 20% 18%;
+    --muted-foreground: 270 15% 60%;
+
+    --accent: 35 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 20% 20%;
+    --input: 270 20% 20%;
+    --ring: 280 65% 60%;
+
+    --sidebar-background: 270 25% 10%;
+    --sidebar-foreground: 45 30% 95%;
+    --sidebar-primary: 280 65% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 20% 16%;
+    --sidebar-accent-foreground: 45 30% 95%;
+    --sidebar-border: 270 20% 18%;
+    --sidebar-ring: 280 65% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border transition-colors duration-300;
+  }
+
+  body {
+    @apply bg-background text-foreground font-nunito transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  .gradient-nature {
+    background: var(--gradient-nature);
+  }
+  .gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+  .gradient-sky {
+    background: var(--gradient-sky);
+  }
+}
